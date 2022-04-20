@@ -1,0 +1,17 @@
+
+<h><a href="../home">Back to home</a></h>
+
+<% books.every(s=>
+    { %> <p>
+        <b> Book Name: </b>
+         <%= s.name %> 
+    </p>
+    <b> Author: </b>
+        <%= s.Author %> 
+    </p>
+    <a href= "<%= s.link %>"><b> Buy Book Here! </b></a>
+    </p>
+    <hr/>
+    <%- include ('footer') %>
+    <% });
+%>

@@ -1,0 +1,10 @@
+<% x = 0%>
+<% books.forEach(s=>
+    { %> <p>
+        <b> Book Name: </b>
+        <a href= "/books/<%= x %>"> <%= s.name %> </a>
+    </p>
+    <hr/> <% x+=1%> 
+    <% });
+%>
+<%- include ('./books/footer') %>
